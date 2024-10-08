@@ -12,6 +12,16 @@ class ProductController extends Controller
     
     return view('products', compact('products'));
    }
+
+   public function show($id)
+   {
+       // Find the product by ID or fail if not found
+       $product = Product::findOrFail($id);
+
+       // Return the product details view with the product data
+       return view('products.show', compact('product'));
+   }
+
 }
 
 

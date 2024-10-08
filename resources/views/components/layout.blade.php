@@ -6,8 +6,8 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
     @vite('resources/css/app.css')
 </head>
-<body>
-    <div class="container">
+<body class="bg-gray-800">
+    <div class="container flex mx-auto">
         {{ $slot }}  <!-- This is where the dynamic content will be injected -->
     </div>
 </body>

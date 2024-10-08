@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->decimal('price', 8, 2); // Price of product
-            $table->text('description'); // Product description
-            $table->decimal('weight', 8, 2);
+            $table->text('description')->nullable(); // Product description
+            $table->decimal('weight', 8, 2)->nullable();
             $table->timestamps();
         });
     }
