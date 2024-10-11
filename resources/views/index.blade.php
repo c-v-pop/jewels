@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/1ce7f964f6.js" crossorigin="anonymous"></script>
     <title>Document</title>
     @vite('resources/css/app.css')
 
@@ -14,7 +15,7 @@
             <h1>Agnes' Timeless Treasures</h1>
         </div>
         <div class="flex lg:justify-center lg:col-start-2 h-20">
-            <img src="images/gemstone.png" alt="gemstone">
+            <i class="fa-regular fa-gem fa-4x text-primary hover:text-support duration-300"></i>
         </div>
         @if (Route::has('login'))
             <nav class="flex flex-1 justify-end mx-auto">
@@ -48,7 +49,7 @@
     </header>
     <section id="about-us" class="about-section text-secondary">    
         <article>
-            <div class="flex flex-col gap-6 mx-auto pt-24 w-1/2 text-center leading-8">
+            <div class="flex flex-col gap-6 mx-auto lg:pt-24 w-1/2 text-center leading-8">
             <p>
                 Welcome to Agnes' Timeless Treasures, your trusted destination for exquisite second-hand jewellery, wallets, handbags, and new treasures.<br> With a passion for quality and a love for craftsmanship, we offer a curated selection of beautiful, pre-loved items that tell a story.<br> Whether you're looking for a vintage piece to add to your collection or an elegant accessory to complement your style, we have something unique for everyone.
             </p>
@@ -58,7 +59,7 @@
             <p> 
                 Browse our selection online or visit us in-store to find something truly special. <br>Thank you for choosing Agnes' Timeless Treasures where every piece has a story, and every customer is treated like family.
             </p>  
-            <a href="{{ route('products') }}" class="hover:bg-support text-center text-primary outline-dotted duration-300 w-1/3 mx-auto mt-6">Discover our selection online</a>          
+            <a href="{{ route('products') }}" class="hover:bg-support text-center text-primary outline-dotted duration-300 lg:w-1/3 mx-auto mt-6 w-full">Discover our selection online</a>          
             </div>
         </article>
     </section>
@@ -66,7 +67,6 @@
       </div>
     </div>
   </div>
-  
   
 </body>
 </html>
