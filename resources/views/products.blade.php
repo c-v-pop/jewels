@@ -23,5 +23,4 @@
     <p class="mt-8 text-center text-gray-600">No products available at the moment.</p>
     @endif
 </div>
-
 </x-layout>
