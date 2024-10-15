@@ -49,20 +49,26 @@
     </header>
     <section id="about-us" class="about-section text-secondary">    
         <article>
-            <div class="flex flex-col gap-6 mx-auto lg:pt-24 w-1/2 text-center leading-8">
+            <div class="flex flex-col gap-6 mx-auto w-1/2 text-center leading-8">
             <p>
                 Welcome to Agnes' Timeless Treasures, your trusted destination for exquisite second-hand jewellery, wallets, handbags, and new treasures.<br> With a passion for quality and a love for craftsmanship, we offer a curated selection of beautiful, pre-loved items that tell a story.<br> Whether you're looking for a vintage piece to add to your collection or an elegant accessory to complement your style, we have something unique for everyone.
             </p>
+            <div class="flex justify-between">
+                <img src="{{ asset('/images/crystals_necklace.jpg') }}" alt="Crystals Necklace" class="w-[18rem] h-[18rem] rounded-3xl">
+                <img src="{{ asset('images/unique_hoop_pearl_necklace.jpg') }}" alt="Unique pearl hoop necklace" class="w-[18rem] h-[18rem] rounded-3xl">
+                <img src="{{ asset('images/polished_stone_necklace.jpg') }}" alt="Polished stones necklace" class="w-[18rem] h-[18rem] rounded-3xl">
+            </div>
             <p>
                 At Agnes' Timeless Treasures, we believe in giving jewellery a second life.<br> Every item in our store is carefully inspected to ensure authenticity and quality, providing you with the opportunity to own timeless pieces at affordable prices.<br> Our collection is constantly updated, so you never know what hidden gem you'll discover next.
             </p>
             <p> 
                 Browse our selection online or visit us in-store to find something truly special. <br>Thank you for choosing Agnes' Timeless Treasures where every piece has a story, and every customer is treated like family.
             </p>  
-            <a href="{{ route('products') }}" class="hover:bg-support text-center text-primary outline-dotted duration-300 lg:w-1/3 mx-auto mt-6 w-full">Discover our selection online</a>          
-            </div>
-        </article>
-    </section>
+            <a href="{{ route('products') }}" class="hover:bg-support text-center text-primary outline-dotted duration-300 lg:w-1/3 mx-auto w-full">Discover our selection online</a>          
+        </div>
+    </article>
+</section>
+    
     
       </div>
     </div>
