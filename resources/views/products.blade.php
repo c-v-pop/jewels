@@ -1,9 +1,4 @@
 <x-layout>  <!-- This refers to the layout component -->
-    <a
-    href="{{ url('/') }}"
-    class="rounded-md px-3 py-2 text-primary hover:bg-support hover:text-white text-center  outline-dotted duration-300 h-full mt-6">
-    Home
-</a>
 <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
     <h2 class="sr-only">Products</h2>
     
