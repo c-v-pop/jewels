@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,6 +47,9 @@
         @endif
 
     </header>
+<a href="#discover" id="scroll-down" class="duration-300 fixed bottom-5 right-4 text-3xl mr-6 animate-bounce hover:animate-none"> 
+    <i class="fa-solid fa-gift text-secondary hover:text-tertiary fa-2xl"></i>
+</a>
     <section id="about-us" class="about-section text-secondary">    
         <article class="mt-16">
             <div class="flex flex-col mx-auto w-fit">
@@ -68,7 +71,7 @@
                 </p>
                     <img src="{{ asset('/images/unique_hoop_pearl_necklace.jpg') }}" alt="Crystals Necklace" class="lg:w-1/3 lg:h-[40rem] rounded-3xl">
             </div>
-            <a href="{{ route('products') }}" class="hover:bg-support text-center text-primary outline-dotted duration-300 lg:w-1/3 mx-auto w-1/2 my-20 lg:py-4 rounded-md text-2xl">Discover our selection online</a>          
+            <a href="{{ route('products') }}" id="discover" class="hover:bg-support text-center text-primary outline-dotted duration-300 lg:w-1/3 mx-auto p-2 my-20 lg:py-4 rounded-md text-2xl">Discover our selection online</a>          
         </div>
     </article>
 </section>
