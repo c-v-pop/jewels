@@ -2,17 +2,20 @@
 
 <x-layout> <!-- This refers to the layout component -->
     <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 text-center">
+        <a href="{{ url('/products') }}" id="scroll-down" class="duration-300 fixed bottom-8 right-4 text-3xl mr-6 animate-bounce hover:animate-none"> 
+            <i class="fa-solid fa-gift text-secondary hover:text-tertiary fa-2xl duration-200"> All Products</i>
+        </a>
         <div class="rounded-2xl">           
             <!-- Product Details Section -->
-            <div>
-                <img src="{{ asset('storage/' . $product->image_url) }}" alt="{{ $product->description }}" class="w-full max-h-64 object-cover object-center hover:scale-105 duration-200 rounded-t-2xl">
-                <h1 class="text-2xl font-bold text-gray-900">{{ $product->name }}</h1>
-                <p class="mt-4 text-lg text-gray-600">{{ $product->description }}</p>
-                <p class="mt-4 text-xl font-medium text-gray-900">${{ $product->price }}</p>
+            <div class="rounded-2xl bg-gray-700 pb-6">
+                <img src="{{ asset('storage/' . $product->image_url) }}" alt="{{ $product->description }}" class="h-96 w-96 object-fill object-fit hover:scale-105 duration-200 rounded-t-2xl hover:cursor-zoom-in hover:rounded-none">
+                <h1 class="text-2xl font-bold text-secondary">{{ $product->name }}</h1>
+                <p class="mt-4 text-lg text-secondary">{{ $product->description }}</p>
+                <p class="mt-4 text-xl font-medium text-secondary">${{ $product->price }}</p>
                 
                 <!-- Additional Product Information (if available) -->
                 @if($product->weight)
-                    <p class="mt-2 text-sm text-gray-500">Weight: {{ $product->weight }}g</p>
+                    <p class="mt-2 text-sm text-secondary">Weight: {{ $product->weight }}g</p>
                 @endif
                 
                 <!-- Add to Cart Button -->

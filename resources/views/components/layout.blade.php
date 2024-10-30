@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <script src="https://kit.fontawesome.com/1ce7f964f6.js" crossorigin="anonymous"></script>
     @vite('resources/css/app.css')
 </head>
 <body class="bg-gray-800">
