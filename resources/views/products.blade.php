@@ -9,7 +9,7 @@
                 <img src="{{ asset('storage/' . $product->image_url) }}" alt="{{ $product->description }}" class="w-full max-h-64 object-fill object-center group-hover:opacity-60">
             </div>
             <h3 class="mt-4 text-sm text-gray-700">{{ $product->name }}</h3>
-            <p class="mt-1 text-lg font-medium text-gray-900">${{ $product->price }}</p>
+            <p class="mt-1 text-lg font-medium text-gray-900">£{{ $product->price }}</p>
         </a>
         @endforeach
     </div>
