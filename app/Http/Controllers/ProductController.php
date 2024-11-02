@@ -48,7 +48,6 @@ class ProductController extends Controller
         'image_url' => $imagePath,
     ]);
 
-    $additional_images = $request->additional_images;
 
     return redirect()->route('products')->with('success', 'Product created successfully');
    }
