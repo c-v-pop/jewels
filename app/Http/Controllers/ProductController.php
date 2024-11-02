@@ -34,10 +34,11 @@ class ProductController extends Controller
         'description' => 'nullable|string',
         'price' => 'required|numeric',
         'weight' => 'required|numeric',
-        'image' => 'required|image|mimes:jpg,png,jpeg|max:2048',
+        'featured_image' => 'required|image|mimes:jpg,png,jpeg|max:2048',
+        'additional_images' => 'required',
     ]);
 
-    $imagePath = $request->file('image')->store('product_images', 'public');
+    $imagePath = $request->file('featured_image')->store('product_images', 'public');
 
     Product::create([
         'name' => $request->name,
@@ -47,6 +48,7 @@ class ProductController extends Controller
         'image_url' => $imagePath,
     ]);
 
+    $additional_images = $request->additional_images;
 
     return redirect()->route('products')->with('success', 'Product created successfully');
    }

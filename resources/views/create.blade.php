@@ -43,10 +43,14 @@
 
             <!-- Product Image Upload -->
             <div class="mb-6">
-                <label for="image" class="block text-primary">Product Image</label>
-                <input type="file" name="image" id="image" class="w-full border border-gray-300 rounded-md p-2 text-primary" required>
+                <label for="featured_image" class="block text-primary">Featured Image</label>
+                <input type="file" name="featured_image" id="featured_image" class="w-full border border-gray-300 rounded-md p-2 text-primary" required>
             </div>
-
+            <div class="mb-6">
+                <label for="additional_images" class="block text-primary">Additional Image</label>
+                <input type="file" name="additional_images[]" id="additional_images" class="w-full border border-gray-300 rounded-md p-2 text-primary" required multiple>
+            </div>
+            
             <!-- Submit Button -->
             <button type="submit" class="rounded-md px-3 py-2 text-primary hover:bg-support hover:text-white text-center  outline-dotted duration-300">Add Product</button>
         </form>
