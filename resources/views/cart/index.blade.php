@@ -2,12 +2,11 @@
 <x-layout>
     <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 lg:max-w-7xl lg:px-8 bg-gray-700 rounded-2xl text-center mb-6 text-primary">
         <h2 class="text-2xl font-bold">Your Cart</h2>
-
+        <a href="{{ url('/products') }}" id="scroll-down" class="duration-300 fixed bottom-8 right-4 text-3xl mr-6 animate-bounce hover:animate-none"> 
+            <i class="fa-solid fa-gift text-secondary hover:text-tertiary fa-2xl duration-200"> All Products</i>
+        </a>
         @if(session('cart'))
             <div class="mt-6">
-                <a href="{{ url('/products') }}" id="scroll-down" class="duration-300 fixed bottom-8 right-4 text-3xl mr-6 animate-bounce hover:animate-none"> 
-                    <i class="fa-solid fa-gift text-secondary hover:text-tertiary fa-2xl duration-200"> All Products</i>
-                </a>
                 @foreach(session('cart') as $id => $details)
                     <div class="flex flex-col items-center gap-6 border-b py-6">
                         <img src="{{ $details['image_url'] }}" alt="{{ $details['name'] }}" class="h-96 w-96 object-cover">

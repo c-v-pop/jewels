@@ -8,8 +8,15 @@
         <div class="rounded-2xl">           
             <!-- Product Details Section -->
             <div class="rounded-2xl bg-gray-700 pb-6">
-                <img src="{{ asset('storage/' . $product->image_url) }}" alt="{{ $product->description }}" class="h-96 w-96 object-fill object-fit hover:scale-105 duration-200 rounded-t-2xl hover:cursor-zoom-in hover:rounded-none">
-                <h1 class="text-2xl font-bold text-secondary">{{ $product->name }}</h1>
+                
+                <!-- Display All Images (Featured and Additional) -->
+                <div class="flex flex-wrap gap-4 justify-center">
+                    @foreach($product->images as $image)
+                        <img src="{{ asset('storage/' . $image->image_url) }}" alt="{{ $product->name }}" class="h-48 w-48 object-cover rounded-md duration-200 hover:scale-105 hover:rounded-lg">
+                    @endforeach
+                </div>
+                
+                <h1 class="text-2xl font-bold text-secondary mt-4">{{ $product->name }}</h1>
                 <p class="mt-4 text-lg text-secondary">{{ $product->description }}</p>
                 <p class="mt-4 text-xl font-medium text-secondary">${{ $product->price }}</p>
                 
@@ -21,7 +28,7 @@
                 <!-- Add to Cart Button -->
                 <form action="{{ route('cart.add', $product->id) }}" method="POST" class="mt-6">
                     @csrf
-                    <button type="submit" class="rounded-md px-3 py-2 text-primary hover:bg-support hover:text-white text-center  outline-dotted duration-300">
+                    <button type="submit" class="rounded-md px-3 py-2 text-primary hover:bg-support hover:text-white text-center outline-dotted duration-300">
                         Add to Cart
                     </button>
                 </form>
