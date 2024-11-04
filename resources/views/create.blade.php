@@ -1,5 +1,8 @@
 <x-layout>
     <div class="max-w-2xl mx-auto py-8 bg-gray-700 rounded-xl px-4 text-center">
+        <a href="{{ url('/products') }}" id="scroll-down" class="duration-300 fixed bottom-8 right-4 text-3xl mr-6 animate-bounce hover:animate-none hidden lg:block"> 
+            <i class="fa-solid fa-gift text-secondary hover:text-tertiary fa-2xl duration-200"> All Products</i>
+        </a>
         <h1 class="rounded-md px-3 py-2 text-primary text-center text-2xl mb-4">Add New Product</h1>
 
         <!-- Display Validation Errors -->

@@ -2,7 +2,7 @@
 
 <x-layout> <!-- This refers to the layout component -->
     <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 text-center">
-        <a href="{{ url('/products') }}" id="scroll-down" class="duration-300 fixed bottom-8 right-4 text-3xl mr-6 animate-bounce hover:animate-none"> 
+        <a href="{{ url('/products') }}" id="scroll-down" class="duration-300 fixed bottom-8 right-4 text-3xl mr-6 animate-bounce hover:animate-none hidden lg:block"> 
             <i class="fa-solid fa-gift text-secondary hover:text-tertiary fa-2xl duration-200"> All Products</i>
         </a>
         <div class="rounded-2xl">           
@@ -12,7 +12,7 @@
                 <!-- Display All Images (Featured and Additional) -->
                 <div class="flex flex-wrap gap-4 justify-center">
                     @foreach($product->images as $image)
-                        <img src="{{ asset('storage/' . $image->image_url) }}" alt="{{ $product->name }}" class="h-48 w-48 object-cover rounded-md duration-200 hover:scale-105 hover:rounded-lg">
+                        <img src="{{ asset('storage/' . $image->image_url) }}" alt="{{ $product->name }}" class="h-48 w-48 object-cover rounded-md duration-200 hover:scale-150 hover:rounded-lg">
                     @endforeach
                 </div>
                 
