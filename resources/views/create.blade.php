@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="max-w-2xl mx-auto py-8 bg-gray-700 rounded-xl px-4 text-center">
+    <div class="max-w-2xl mx-auto py-8 bg-gray-700 rounded-xl px-4 text-center mt-6">
         <a href="{{ url('/products') }}" id="scroll-down" class="duration-300 fixed bottom-8 right-4 text-3xl mr-6 animate-bounce hover:animate-none hidden lg:block"> 
             <i class="fa-solid fa-gift text-secondary hover:text-tertiary fa-2xl duration-200"> All Products</i>
         </a>
@@ -42,8 +42,8 @@
             <div class="mb-6">
                 <label for="weight" class="block text-primary">Weight (grams)</label>
                 <input type="number" name="weight" id="weight" class="w-full border border-gray-300 rounded-md p-2" required step="0.01">
-            </div>
-
+            </div> 
+            
             <!-- Product Image Upload -->
             <div class="mb-6">
                 <label for="featured_image" class="block text-primary">Featured Image</label>

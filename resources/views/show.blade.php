@@ -10,9 +10,9 @@
             <div class="rounded-2xl bg-gray-700 pb-6">
                 
                 <!-- Display All Images (Featured and Additional) -->
-                <div class="flex flex-wrap gap-4 justify-center">
+                <div class="flex gap-4">
                     @foreach($product->images as $image)
-                        <img src="{{ asset('storage/' . $image->image_url) }}" alt="{{ $product->name }}" class="h-48 w-48 object-cover rounded-md duration-200 hover:scale-150 hover:rounded-lg">
+                        <img src="{{ asset('storage/' . $image->image_url) }}" alt="{{ $product->name }}" class="h-48 w-full object-cover rounded-md duration-200 hover:scale-150">
                     @endforeach
                 </div>
                 
