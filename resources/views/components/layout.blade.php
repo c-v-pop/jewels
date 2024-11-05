@@ -8,7 +8,7 @@
     @vite('resources/css/app.css')
 </head>
 <body class="bg-gray-800">
-    <header class="lg:grid grid-cols-3 items-center gap-2 py-10 lg:grid-cols-3 flex">
+    <header class="lg:grid grid-cols-3 items-center gap-2 py-10 lg:grid-cols-3 flex flex-col">
         <div class="text-center text-primary hover:text-support duration-300 mx-auto px-3 py-2 rounded-md">
             <a
             href="{{ url('/') }}"
@@ -20,8 +20,13 @@
             <h1 class="lg:text-4xl">Agnes' Timeless Treasures</h1>
         </div>
         @if (Route::has('login'))
-            <nav class="flex flex-1 lg:justify-end mx-auto">
+            <nav class="flex flex-1 lg:justify-end mx-auto gap-6">
                 @auth
+                <a
+                    href="{{ url('/create-product') }}"
+                    class="rounded-md px-3 py-2 text-primary hover:bg-support hover:text-white text-center  outline-dotted duration-300 text-md lg:text-2xl">
+                    Add Product
+                    </a>
                     <a
                         href="{{ url('/cart') }}"
                         class="rounded-md px-3 py-2 text-primary hover:bg-support hover:text-white text-center  outline-dotted duration-300 lg:text-2xl"
