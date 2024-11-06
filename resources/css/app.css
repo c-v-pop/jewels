@@ -7,7 +7,7 @@
 }
 
 .group {
-    @apply bg-gradient-to-b from-orange-600 via-black to-gray-700 rounded-md; 
+    @apply bg-gradient-to-b from-orange-600 via-black to-gray-700 rounded-2xl; 
 }
 .group h3, p {
     @apply flex justify-center pb-[0.5em] font-bold;
