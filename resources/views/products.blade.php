@@ -4,9 +4,9 @@
     
     <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
         @foreach($products as $product)
-        <a href="{{ route('products.show', $product->id) }}" class="group">
+        <a href="{{ route('products.show', $product->id) }}" class="group pb-4">
             <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-t-lg xl:aspect-h-8 xl:aspect-w-7">
-                <img src="{{ $product->image_url }}" alt="{{ $product->description }}" class="h-64 w-64 object-fill object-center group-hover:opacity-60 rounded-full">
+                <img src="{{ $product->image_url }}" alt="{{ $product->description }}" class="h-64 w-64 object-fill object-center group-hover:opacity-60 rounded-full m-4">
             </div>
             <h3 class="mt-4 text-sm text-orange-400">{{ $product->name }}</h3>
             <p class="mt-1 text-lg font-medium text-orange-400">£{{ $product->price }}</p>

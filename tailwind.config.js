@@ -14,7 +14,12 @@ export default {
           'secondary': '#DEE5D4',
           'support': '#8EACCD',
           'tertiary': '#87A2FF',
-        }
+        },
+        scale: {
+          '200': '2',      // 2x scale
+          '250': '2.5',    // 2.5x scale
+          '300': '3',      // 3x scale
+      },
       },
     },
     plugins: [],

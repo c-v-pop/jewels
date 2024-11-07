@@ -1,6 +1,6 @@
 <!-- resources/views/cart/index.blade.php -->
 <x-layout>
-    <div class="mx-auto max-w-2xl px-4 py-10 sm:px-6 lg:px-8 bg-gray-700 rounded-2xl text-center mb-6 text-primary mt-12">
+    <div class="mx-auto max-w-2xl px-4 py-10 sm:px-6 lg:px-8 bg-gradient-to-b from-orange-600 via-black to-gray-700 rounded-2xl text-center mb-6 text-primary mt-12">
         <h2 class="text-2xl font-bold">Your Cart</h2>
         <a href="{{ url('/products') }}" id="scroll-down" class="duration-300 fixed bottom-8 right-4 text-3xl mr-6 animate-bounce hover:animate-none hidden lg:block"> 
             <i class="fa-solid fa-gift text-secondary hover:text-tertiary fa-2xl duration-200"> All Products</i>
