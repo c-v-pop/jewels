@@ -11,13 +11,13 @@
 
                 <h1 class="text-2xl font-bold text-secondary mt-4">{{ $product->name }}</h1>
                 <p class="mt-4 text-lg text-secondary">{{ $product->description }}</p>
-                <p class="mt-4 text-xl font-medium text-secondary">${{ $product->price }}</p>
+                <p class="mt-4 text-xl font-medium text-secondary">£{{ $product->price }}</p>
 
                 <!-- Display All Images (Featured and Additional) -->
                 <div class="flex gap-4">
                     @foreach($product->images as $image)
                         <img src="{{ asset('storage/' . $image->image_url) }}" alt="{{ $product->name }}"
-                             class="h-48 w-full object-cover rounded-md duration-200 hover:scale-300 hover:z-50 hover:cursor-zoom-in ease-linear">
+                             class="h-48 w-full object-cover rounded-md duration-200 hover:scale-300 hover:z-50 hover:cursor-zoom-in ease-linear my-4">
                     @endforeach
                 </div>
                 

@@ -26,7 +26,7 @@
             class="rounded-md px-3 py-2 text-primary hover:bg-support hover:text-white text-center  outline-dotted duration-300 text-2xl"
             >
             Dashboard
-        </a>
+            </a>
         <form method="POST" action="{{ route('logout') }}">
             @csrf
 
