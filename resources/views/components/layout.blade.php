@@ -27,13 +27,13 @@
                     class="rounded-md px-3 py-2 text-primary hover:bg-support text-center  outline-dotted duration-300 text-md lg:text-2xl">
                     Add Product
                     </a>
+                    @else
                     <a
                         href="{{ url('/cart') }}"
                         class="rounded-md px-3 py-2 text-primary hover:bg-support text-center  outline-dotted duration-300 lg:text-2xl"
                     >
                         Cart
                     </a>
-                @else
                     <a
                         href="{{ route('login') }}"
                         class="rounded-md px-3 py-2 text-primary hover:bg-support text-center  outline-dotted duration-300 mx-6"
