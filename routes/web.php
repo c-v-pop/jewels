@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -28,6 +29,12 @@ Route::middleware('auth')->group(function () {
     Route::post('/cart/add/{product}', [CartController::class, 'add'])->name('cart.add');
     Route::post('/cart/remove/{product}', [CartController::class, 'remove'])->name('cart.remove');
 
+    // PayPal Checkout Integration
+    Route::get('/checkout', [CheckoutController::class, 'show'])->name('checkout.show');
+    Route::post('/checkout', [CheckoutController::class, 'process'])->name('checkout.process');
+    Route::get('/checkout/success', [CheckoutController::class, 'success'])->name('checkout.success');
+    Route::get('/checkout/cancel', [CheckoutController::class, 'cancel'])->name('checkout.cancel');
+    
 });
 
 require __DIR__.'/auth.php';
