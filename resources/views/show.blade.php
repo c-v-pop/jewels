@@ -17,7 +17,7 @@
                 <div class="flex gap-4">
                     @foreach($product->images as $image)
                         <img src="{{ asset('storage/' . $image->image_url) }}" alt="{{ $product->name }}"
-                             class="h-48 w-full object-cover rounded-md duration-200 hover:scale-300 hover:z-50 hover:cursor-zoom-in ease-linear my-4">
+                             class="h-48 w-full object-cover rounded-md duration-200 hover:scale-300 hover:z-50 hover:cursor-zoom-in ease-in my-4">
                     @endforeach
                 </div>
                 
