@@ -21,7 +21,7 @@
                     @endforeach
                 </div>
                 
-                <!-- Additional Product Information (if available) -->
+                <!-- Additional Product Information -->
                 @if($product->weight)
                     <p class="mt-2 text-sm text-secondary">Weight: {{ $product->weight }}g</p>
                 @endif
