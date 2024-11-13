@@ -74,11 +74,3 @@ bash
 Copy code
 herd serve
 Open your browser and navigate to the local URL provided by Herd (typically http://localhost).
-
-Development Workflow
-Adding Products: You can add new jewelry products by accessing the 'Add Product' option in the navigation.
-Updating and Deleting Products: Each product entry includes options to edit or delete it, allowing for easy content management.
-Viewing Products: The home page or products section displays all available jewelry items in the inventory.
-Additional Notes
-Tailwind CSS: All styles are written with Tailwind CSS for a clean and responsive design.
-Database: By default, Jewels uses SQLite for simplicity, but you can modify this in the .env file to connect with other databases (e.g., MySQL, PostgreSQL).
