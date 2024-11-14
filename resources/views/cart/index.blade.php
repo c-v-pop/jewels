@@ -20,10 +20,11 @@
                             <button type="submit" class="rounded-md px-3 py-2 text-red-200 hover:bg-red-600 hover:text-white text-center  outline-dotted duration-300">Remove</button>
                         </form>
                     </div>
-                @endforeach
-            </div>
+                    @endforeach
+                </div>
         @else
             <p class="mt-4">Your cart is empty.</p>
         @endif
+        <a href={{ url('/checkout') }} class="rounded-md px-3 py-2 text-primary hover:bg-support hover:text-white text-center outline-dotted duration-300">Checkout</a>
     </div>
 </x-layout>

@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="max-w-2xl mx-auto py-8 bg-gray-700 rounded-xl px-4 text-center mt-6">
+    <div class="max-w-2xl mx-auto py-8 bg-gray-700 rounded-xl px-4 text-center mt-6 bg-gradient-to-b from-orange-600 via-black to-gray-700">
         <a href="{{ url('/products') }}" id="scroll-down" class="duration-300 fixed bottom-8 right-4 text-3xl mr-6 animate-bounce hover:animate-none hidden lg:block"> 
             <i class="fa-solid fa-gift text-secondary hover:text-tertiary fa-2xl duration-200"> All Products</i>
         </a>
