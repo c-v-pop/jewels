@@ -20,6 +20,9 @@ export default {
           '250': '2.5',    // 2.5x scale
           '300': '3',      // 3x scale
       },
+      backgroundImage: {
+        'gradient-bg': 'linear-gradient(to right, #FFA500, #000000, #FFA500)', // Orange -> Black -> Orange
+      },
       },
     },
     plugins: [],

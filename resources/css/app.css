@@ -12,6 +12,6 @@
 .group h3, p {
     @apply flex justify-center pb-[0.5em] font-bold;
 }
-header {
+.main_header {
     @apply bg-gradient-to-tr from-orange-400 via-orange-900 to-orange-400 sticky top-0 z-30;
 }

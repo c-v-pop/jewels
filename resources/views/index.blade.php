@@ -10,7 +10,7 @@
     
 </head>
 <body class="bg-gray-800">
-    <header class="lg:grid grid-cols-3 items-center gap-2 py-10 lg:grid-cols-3 flex flex-col-reverse">
+    <header class="lg:grid grid-cols-3 items-center gap-2 py-10 lg:grid-cols-3 flex flex-col-reverse main_header">
         <div class="text-center text-primary hover:text-support duration-300 mx-auto px-3 py-2 rounded-md">
             <i class="fa-regular fa-gem fa-4x text-primary hover:text-support duration-300"></i>
         </div>
@@ -56,7 +56,7 @@
 @endif
 </header>
 <a href="#discover" id="scroll-down" class="duration-300 fixed bottom-8 right-4 text-3xl mr-6 animate-bounce hover:animate-none"> 
-    <i class="fa-solid fa-gift text-secondary hover:text-tertiary fa-2xl"></i>
+    <i class="fa-solid fa-gift text-orange-500 hover:text-secondary fa-2xl"></i>
 </a>
 <!-- About Section -->
 <section id="about-us" class="about-section text-secondary max-w-[1048px] mx-auto">    
@@ -74,7 +74,7 @@
                 </p>
                 <img src="{{ asset('/images/teal_pearl_necklace.jpg') }}" alt="Crystals Necklace" class="lg:w-1/3 lg:h-[25rem] rounded-3xl">
             </div>
-            <div class="flex lg:flex-row-reverse flex-col items-center gap-12 mx-4 mt-10 lg:text-center">
+            <div class="flex lg:flex-row-reverse flex-col items-center gap-12 mx-4 mt-10 lg:text-start">
                 <p class="text-xl leading-loose">
                     Browse our selection online or visit us in-store to find something exceptional. <br> Thank you for choosing Agnes' Timeless Treasures where every piece has a story, and every customer is treated like family.
                 </p>

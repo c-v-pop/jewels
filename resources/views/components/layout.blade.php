@@ -8,7 +8,7 @@
     @vite('resources/css/app.css')
 </head>
 <body class="bg-gray-800">
-    <header class="lg:grid grid-cols-3 items-center gap-2 py-10 lg:grid-cols-3 flex flex-col">
+    <header class="lg:grid grid-cols-3 items-center gap-2 py-10 lg:grid-cols-3 flex flex-col main_header">
         <div class="text-center text-primary hover:text-support duration-300 mx-auto px-3 py-2 rounded-md">
             <a
             href="{{ url('/') }}"
