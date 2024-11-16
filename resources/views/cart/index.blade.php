@@ -6,7 +6,7 @@
             <i class="fa-solid fa-gift text-secondary hover:text-tertiary fa-2xl duration-200"> All Products</i>
         </a>
         @if(session('cart'))
-            <div class="mt-6">
+            <div class="my-8">
                 @foreach(session('cart') as $id => $details)
                     <div class="flex items-center justify-between gap-6 border-b flex-shrink">
                         <img src="{{ $details['image_url'] }}" alt="{{ $details['name'] }}" class="h-16 w-16">
