@@ -75,4 +75,4 @@ Copy code
 herd serve
 Open your browser and navigate to the local URL provided by Herd (typically http://localhost).
 
-Added PayPal payment option with redirect to seller page.
+Integrated PayPal payment option with redirect to seller page.
