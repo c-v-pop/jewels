@@ -76,3 +76,5 @@ herd serve
 Open your browser and navigate to the local URL provided by Herd (typically http://localhost).
 
 Integrated PayPal payment option with redirect to seller page.
+
+Updated PayPal accout to actual seller
