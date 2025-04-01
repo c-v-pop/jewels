@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="mx-auto max-w-2xl px-4 py-10 sm:px-6 lg:px-8 bg-gradient-to-b from-orange-600 via-black to-gray-700 rounded-2xl text-center mb-6 text-primary mt-12">
+    <div class="mx-auto max-w-2xl px-4 py-10 sm:px-6 lg:px-8  rounded-2xl text-center mb-6 text-primary mt-12">
         @foreach(session('cart') as $id => $details)
             <div class="flex items-center justify-between gap-6 border-b flex-shrink">
                 <img src="{{ $details['image_url'] }}" alt="{{ $details['name'] }}" class="h-16 w-16">

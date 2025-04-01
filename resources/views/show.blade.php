@@ -7,7 +7,7 @@
         </a>
         <div class="rounded-2xl">           
             <!-- Product Details Section -->
-            <div class="rounded-2xl bg-gradient-to-b from-orange-600 via-black to-gray-700 p-6">
+            <div class="rounded-2xl  p-6">
 
                 <h1 class="text-2xl font-bold text-secondary mt-4">{{ $product->name }}</h1>
                 <p class="mt-4 text-lg text-secondary">{{ $product->description }}</p>

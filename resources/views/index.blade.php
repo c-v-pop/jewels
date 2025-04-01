@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/1ce7f964f6.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Agnes' Timeless Treasures</title>
     @vite('resources/css/app.css')
     
 </head>
 <body class="bg-gray-800">
 @include('layouts.header')
 <a href="#discover" id="scroll-down" class="duration-300 fixed bottom-8 right-4 text-3xl mr-6 animate-bounce hover:animate-none"> 
-    <i class="fa-solid fa-gift text-orange-500 hover:text-secondary fa-2xl"></i>
+    <i class="fa-solid fa-gift text-white hover:text-tertiary fa-2xl"></i>
 </a>
 <!-- About Section -->
 <section id="about-us" class="about-section text-secondary max-w-[1048px] mx-auto">    

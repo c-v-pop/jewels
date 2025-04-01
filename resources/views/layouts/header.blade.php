@@ -1,9 +1,9 @@
-<header class="lg:grid grid-cols-3 items-center gap-2 py-10 lg:grid-cols-3 flex flex-col-reverse main_header">
+<header class="lg:grid grid-cols-3 items-center gap-2 py-10 lg:grid-cols-3 flex flex-col-reverse bg-black/15">
     <div class="text-center text-primary hover:text-support duration-300 mx-auto px-3 py-2 rounded-md">
         <i class="fa-regular fa-gem fa-4x text-primary hover:text-support duration-300"></i>
     </div>
     <div class="text-center text-primary hover:text-white duration-300 mx-auto px-3 py-2 rounded-md">
-        <h1 class="text-4xl">Agnes' Timeless Treasures</h1>
+        <h1 class="text-4xl bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-300 text-transparent bg-clip-text">Agnes' Timeless Treasures</h1>
     </div>
     <!-- Login Logic -->
     @if (Route::has('login'))
