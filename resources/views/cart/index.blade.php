@@ -17,7 +17,7 @@
                         </div>
                         <form action="{{ route('cart.remove', $id) }}" method="POST">
                             @csrf
-                            <button type="submit" class="rounded-md px-3 py-2 text-red-200 hover:bg-red-600 hover:text-white text-center  outline-dotted duration-300">Remove</button>
+                            <button type="submit" class="rounded-md px-3 py-2 text-red-200 hover:bg-red-600 hover:text-white text-center  outline-solid duration-300">Remove</button>
                         </form>
                     </div>
                     @endforeach
@@ -25,6 +25,6 @@
         @else
             <p class="mt-4">Your cart is empty.</p>
         @endif
-        <a href={{ url('/checkout') }} class="rounded-md px-3 py-2 text-primary hover:bg-support hover:text-white text-center outline-dotted duration-300">Checkout</a>
+        <a href={{ url('/checkout') }} class="rounded-md px-3 py-2 text-primary hover:bg-support hover:text-white text-center outline-solid duration-300">Checkout</a>
     </div>
 </x-layout>

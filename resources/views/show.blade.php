@@ -29,7 +29,7 @@
                 <!-- Add to Cart Button -->
                 <form action="{{ route('cart.add', $product->id) }}" method="POST" class="mt-6">
                     @csrf
-                    <button type="submit" class="rounded-md px-3 py-2 text-primary hover:bg-support hover:text-white text-center outline-dotted duration-300">
+                    <button type="submit" class="rounded-md px-3 py-2 text-primary hover:bg-support hover:text-white text-center outline-solid duration-300">
                         Add to Cart
                     </button>
                 </form>

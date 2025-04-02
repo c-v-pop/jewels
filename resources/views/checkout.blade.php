@@ -10,7 +10,7 @@
                 </div>
                 <form action="{{ route('cart.remove', $id) }}" method="POST">
                     @csrf
-                    <button type="submit" class="rounded-md px-3 py-2 text-red-200 hover:bg-red-600 hover:text-white text-center outline-dotted duration-300">Remove</button>
+                    <button type="submit" class="rounded-md px-3 py-2 text-red-200 hover:bg-red-600 hover:text-white text-center outline-solid duration-300">Remove</button>
                 </form>
             </div>
         @endforeach
@@ -23,7 +23,7 @@
 
         <!-- Dynamic PayPal Link -->
         <a href="https://paypal.me/cvpopdev?country.x=GB&locale.x=en_GB&amount={{ $total }}" 
-           class="rounded-md px-3 py-2 text-primary hover:bg-support hover:cursor-pointer text-center outline-dotted duration-300 mt-6 w-full inline-block">
+           class="rounded-md px-3 py-2 text-primary hover:bg-support hover:cursor-pointer text-center outline-solid duration-300 mt-6 w-full inline-block">
             Pay £{{ number_format($total, 2) }} with PayPal
         </a>
     </div>

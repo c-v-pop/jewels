@@ -12,7 +12,7 @@
         <div class="text-center text-primary hover:text-support duration-300 mx-auto px-3 py-2 rounded-md">
             <a
             href="{{ url('/') }}"
-            class="rounded-md px-3 py-2 text-primary hover:bg-support text-center  outline-dotted duration-300 lg:text-2xl">
+            class="rounded-md px-3 py-2 text-primary hover:bg-support text-center  outline-solid duration-300 lg:text-2xl">
             Home
             </a>
         </div>
@@ -24,19 +24,19 @@
                 @auth
                 <a
                     href="{{ url('/create-product') }}"
-                    class="rounded-md px-3 py-2 text-primary hover:bg-support text-center  outline-dotted duration-300 text-md lg:text-2xl">
+                    class="rounded-md px-3 py-2 text-primary hover:bg-support text-center  outline-solid duration-300 text-md lg:text-2xl">
                     Create Product
                     </a>
                     <a
                         href="{{ url('/cart') }}"
-                        class="rounded-md px-3 py-2 text-primary hover:bg-support text-center  outline-dotted duration-300 lg:text-2xl"
+                        class="rounded-md px-3 py-2 text-primary hover:bg-support text-center  outline-solid duration-300 lg:text-2xl"
                     >
                         Cart
                     </a>
                     @else
                     <a
                         href="{{ route('login') }}"
-                        class="rounded-md px-3 py-2 text-primary hover:bg-support text-center  outline-dotted duration-300 mx-6"
+                        class="rounded-md px-3 py-2 text-primary hover:bg-support text-center  outline-solid duration-300 mx-6"
                     >
                         Log in
                     </a>
@@ -44,7 +44,7 @@
                     @if (Route::has('register'))
                         <a
                             href="{{ route('register') }}"
-                            class="rounded-md px-3 py-2 text-primary hover:bg-support text-center  outline-dotted duration-300"
+                            class="rounded-md px-3 py-2 text-primary hover:bg-support text-center  outline-solid duration-300"
                         >
                             Register
                         </a>
