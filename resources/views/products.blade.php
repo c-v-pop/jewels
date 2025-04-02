@@ -8,13 +8,13 @@
             <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-t-lg xl:aspect-h-8 xl:aspect-w-7">
                 <img src="{{ $product->image_url }}" alt="{{ $product->description }}" class="h-64 w-64 object-fill object-center group-hover:opacity-60 rounded-full m-4">
             </div>
-            <h3 class="mt-4 text-sm text-orange-400">{{ $product->name }}</h3>
-            <p class="mt-1 text-lg font-medium text-orange-400">£{{ $product->price }}</p>
+            <h3 class="mt-4 text-sm text-white">{{ $product->name }}</h3>
+            <p class="mt-1 text-lg font-medium text-white">£{{ $product->price }}</p>
         </a>
         @endforeach
     </div>
     @if($products->isEmpty())
-    <p class="mt-8 text-center text-orange-400">No products available at the moment.</p>
+    <p class="mt-8 text-center text-white">No products available at the moment.</p>
     @endif
 </div>
 </x-layout>
