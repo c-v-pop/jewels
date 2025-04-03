@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Agnes' Timeless Treasures</title>
     <script src="https://kit.fontawesome.com/1ce7f964f6.js" crossorigin="anonymous"></script>
     @vite('resources/css/app.css')
 </head>
@@ -17,7 +17,7 @@
             </a>
         </div>
         <div class="text-center text-primary hover:text-white duration-300 mx-auto px-3 py-2 rounded-md">
-            <h1 class="lg:text-4xl">Agnes' Timeless Treasures</h1>
+            <h1 class="lg:text-4xl pb-2 text-transparent bg-gradient-to-br from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Agnes' Timeless Treasures</h1>
         </div>
         @if (Route::has('login'))
             <nav class="flex flex-1 lg:justify-end mx-auto gap-6">

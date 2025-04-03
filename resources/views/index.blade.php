@@ -36,7 +36,7 @@
                 </p>
                 <img src="{{ asset('/images/unique_hoop_pearl_necklace.jpg') }}" alt="Crystals Necklace" class="lg:h-[25rem] rounded-3xl">
             </div>
-            <a href="{{ route('products') }}" id="discover" class="hover:bg-support text-center text-primary outline-solid duration-300 lg:w-1/3 mx-auto p-2 my-20 lg:py-4 rounded-md text-2xl">Discover our selection online</a>          
+            <a href="{{ route('products') }}" id="discover" class="hover:text-tertiary hover:outline-dotted text-center pb-2 text-transparent bg-gradient-to-br from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text outline-solid duration-300 lg:w-1/3 mx-auto p-2 my-20 lg:py-4 rounded-md text-2xl">Discover our selection online</a>          
         </div>
     </article>
 </section>
