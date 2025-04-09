@@ -11,9 +11,6 @@
 </head>
 <body class="bg-gray-800">
 @include('layouts.header')
-<a href="#discover" id="scroll-down" class="duration-300 fixed bottom-8 right-4 text-3xl mr-6 animate-bounce hover:animate-none"> 
-    <i class="fa-solid fa-gift text-white hover:text-tertiary fa-2xl"></i>
-</a>
 <!-- About Section -->
 <section id="about-us" class="about-section text-secondary max-w-[1048px] mx-auto">    
     <article class="mt-16">
@@ -37,7 +34,6 @@
                 <img src="{{ asset('/images/unique_hoop_pearl_necklace.jpg') }}" alt="Crystals Necklace" class="lg:h-[25rem] rounded-3xl">
             </div>
             <a href="{{ route('products') }}" 
-               id="discover" 
                class="hover:text-tertiary hover:outline-dotted text-center pb-2 text-transparent bg-gradient-to-br from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text outline-solid duration-300 lg:w-1/3 mx-auto p-2 my-20 lg:py-4 rounded-md text-2xl">
                Discover our selection online
             </a>          

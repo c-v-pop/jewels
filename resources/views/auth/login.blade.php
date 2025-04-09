@@ -39,7 +39,7 @@
                 </a>
                 <a
                 href="{{ route('register') }}"
-                class="rounded-md px-3 py-3 text-primary hover:bg-support hover:text-white text-center  outline-solid duration-300">
+                class="rounded-md p-2 text-gray-400 mx-4 hover:text-white text-center  outline-solid duration-300">
                 Register
                 </a>
             @endif
