@@ -43,9 +43,7 @@
 </div>
 </div>
 </div>
-<footer class="bg-transparent flex flex-col justify-center m-auto text-center my-6 pb-2">
-    <p class="text-[rgba(238,185,93,1)]">&copy; <?php echo date('Y'); ?> Agnes' Timeless Treasures. All rights reserved.</p>
-  </footer>
+@include('layouts.footer')
 
 </body>
 </html>
