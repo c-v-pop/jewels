@@ -27,7 +27,7 @@ class ProductController extends Controller
 
    public function create()
    {
-    if (!Auth::check() || !Auth::user()->is_admin)
+    if (!Auth::check() || !Auth::user()->is_admin)  // This checks if user has admin privileges or not
     {
         abort(403, 'Unauthorized');
     }
