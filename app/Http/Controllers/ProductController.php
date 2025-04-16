@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use App\Models\ProductImages;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 
 class ProductController extends Controller
 {
@@ -25,6 +27,10 @@ class ProductController extends Controller
 
    public function create()
    {
+    if (!Auth::check() || !Auth::user()->is_admin)
+    {
+        abort(403, 'Unauthorized');
+    }
     return view('create');
    }
 

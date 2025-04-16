@@ -22,11 +22,13 @@
         @if (Route::has('login'))
             <nav class="flex flex-1 lg:justify-end mx-auto gap-6">
                 @auth
+                @if(auth()->user()->is_admin)
                 <a
                     href="{{ url('/create-product') }}"
                     class="rounded-md px-3 py-2 text-primary hover:bg-support text-center  outline-solid duration-300 text-md lg:text-2xl">
                     Create Product
                     </a>
+                    @endif
                     <a
                         href="{{ url('/cart') }}"
                         class="rounded-md px-3 py-2 text-primary hover:bg-support text-center  outline-solid duration-300 lg:text-2xl"
